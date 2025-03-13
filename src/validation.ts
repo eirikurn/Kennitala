@@ -52,9 +52,8 @@ const isValidDate = (kt: string): boolean => {
 
 const isPerson = (kt: string): boolean => {
   const day = parseInt(kt.substring(0, 2), 10);
-  const digits78 = parseInt(kt.substring(6, 8), 10);
 
-  return day > 0 && day <= 31 && digits78 >= 20;
+  return day > 0 && day <= 31;
 };
 
 const isTestPerson = (kt: string): boolean => {
